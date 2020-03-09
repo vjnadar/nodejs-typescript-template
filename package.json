@@ -7,7 +7,7 @@
     "start:build": "tsc -w",
     "start:run": "nodemon build/server.js",
     "start": "concurrently npm:start:*",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Vijay Joshua Nadar",
   "license": "ISC",
@@ -18,5 +18,12 @@
     "express": "^4.17.1",
     "nodemon": "^2.0.2",
     "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "jest": "^25.1.0",
+    "supertest": "^4.0.2",
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.8.3"
   }
 }

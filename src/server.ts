@@ -11,6 +11,7 @@ server.use((req: Request, res: Response, next: NextFunction) => {
   next();
 });
 server.use(Router.getRouterInstance());
-server.listen(8080, () => {
+const _server=server.listen(8080, () => {
   console.log("Listening");
 });
+module.exports=_server;
